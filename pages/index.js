@@ -1,20 +1,23 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Footer from './components/footer'
+
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Fred TABBAL</title>
+        <link rel="icon" href="/favicon-Agence-Rampup.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Frédéric TABBAL <Link href="/projects/bsn"><a>cette page!</a></Link>
         </h1>
-
+        <img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" class="portrait" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Développeur Web {/*<code>pages/index.js</code>*/}
         </p>
 
         <div className="grid">
@@ -45,17 +48,19 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          
         </div>
+        
       </main>
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://rampup.fr"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          Made with ❤️ by Me at RampUP{' '}
+          <img src="/favicon-Agence-Rampup.ico" alt="Rampup Logo" className="logo" />
         </a>
       </footer>
 
@@ -188,6 +193,8 @@ export default function Home() {
             flex-direction: column;
           }
         }
+
+        
       `}</style>
 
       <style jsx global>{`
