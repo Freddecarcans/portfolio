@@ -29,6 +29,10 @@ export default function Footer() {
                     color: inherit;
                     text-decoration: none;  
                 }
+                .bottom a:hover {
+                    text-decoration: underline;
+                    color: #602292;
+                }
                 .logo {
                     height: 1em;
                 }    

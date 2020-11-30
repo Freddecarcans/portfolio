@@ -1,71 +1,74 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Footer from './components/footer'
 
 
 export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Fred TABBAL</title>
-        <link rel="icon" href="/favicon-Agence-Rampup.ico" />
-      </Head>
+	return (
+		<div className="container">
+			<Head>
+				<title>Fred TABBAL</title>
+				<link rel="icon" href="/favicon-Agence-Rampup.ico" />
+			</Head>
 
-      <main>
-        <h1 className="title">
-          Frédéric TABBAL <Link href="/projects/bsn"><a>cette page!</a></Link>
-        </h1>
-        <img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" class="portrait" />
-        <p className="description">
-          Développeur Web {/*<code>pages/index.js</code>*/}
-        </p>
+			<main>
+				<h1 className="title">
+					Frédéric TABBAL {/*<Link href="/projects/bsn"><a>cette page!</a></Link>*/}
+				</h1>
+				<img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" className="portrait" />
+				<p className="description">
+					Développeur Web {/*<code>pages/index.js</code>*/}
+				</p>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+				<div className="grid">
+					<Link href="/projects/biographie">
+						<a className="card">
+							<h3>Biographie &rarr;</h3>
+							<p>Tout savoir sur mon savoir et mes savoir-faire</p>
+						</a>
+					</Link>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+					<Link href="/projects/productions">
+						<a className="card">
+							<h3>Réalisatons CMS &rarr;</h3>
+							<p>Sites internet réalisés pour l'agence RampUP</p>
+						</a>
+					</Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+					<Link href="/projects/projets">
+						<a className="card">
+							<h3>Projets &rarr;</h3>
+							<p>Applications réalisées en React, React-Native</p>
+						</a>
+					</Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+					<a href="https://github.com/Freddecarcans" className="card"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<h3>Github &rarr;</h3>
+						<p>
+							Consulter mes repositories sur Github
             </p>
-          </a>
-          
-        </div>
-        
-      </main>
+					</a>
 
-      <footer>
-        <a
-          href="https://rampup.fr"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Made with ❤️ by Me at RampUP{' '}
-          <img src="/favicon-Agence-Rampup.ico" alt="Rampup Logo" className="logo" />
-        </a>
-      </footer>
+				</div>
 
-      <style jsx>{`
+			</main>
+
+			<footer>
+				<a className="footlink"
+					href="https://rampup.fr"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Made with ❤️ by Me at RampUP{' '}
+					<img src="/favicon-Agence-Rampup.ico" alt="Rampup Logo" className="logo" />
+				</a>
+			</footer>
+
+			<style jsx>{`
         .container {
+					background-color: #897977;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
@@ -75,6 +78,7 @@ export default function Home() {
         }
 
         main {
+					
           padding: 5rem 0;
           flex: 1;
           display: flex;
@@ -162,14 +166,14 @@ export default function Home() {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+          transition: color 0.25s ease, border-color 0.25s ease;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #602292;
+          border-color: #602292;
         }
 
         .card h3 {
@@ -185,7 +189,13 @@ export default function Home() {
 
         .logo {
           height: 1em;
-        }
+				}
+				
+				.footlink:hover {
+					text-decoration: underline;
+					color:#602292;
+
+				}
 
         @media (max-width: 600px) {
           .grid {
@@ -197,20 +207,22 @@ export default function Home() {
         
       `}</style>
 
-      <style jsx global>{`
+			<style jsx global>{`
         html,
         body {
+					
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+						sans-serif;
+						
         }
 
         * {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
-  )
+		</div>
+	)
 }
