@@ -20,7 +20,7 @@ export default function Home() {
 				</p>
 
 				<div className="grid">
-					<Link href="/projects/biographie">
+					<Link href="/projects/biography">
 						<a className="card">
 							<h3>Biographie &rarr;</h3>
 							<p>Tout savoir sur mon savoir et mes savoir-faire</p>

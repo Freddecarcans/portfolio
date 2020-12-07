@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Footer from '../components/footer'
 
+
 export default function Biography() {
 	return (
 		<div className="container">
@@ -46,15 +47,15 @@ export default function Biography() {
             <p>Moto</p>
             <p>Cinéma</p>
 					</div>
-
 				</div>
-			
+        
 				<Link href="/" >
         <h2 className="back">⇦ Retour ⇦</h2>
 				</Link>
 			
 			</main>
 			<Footer />
+      
 			<style jsx>{`
 				.container {
           min-height: 100vh;
