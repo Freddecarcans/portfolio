@@ -9,46 +9,50 @@ export default function Bsn() {
 				<title>Biographie</title>
 				<link rel="icon" href="/favicon-Agence-Rampup.ico" />
 			</Head>
+
 			<main>
 			<h1 className="title">Ma Bio</h1>
       <div className="grid">
-					<Link href="/projects/biographie">
-						<a className="card">
-							<h3>Biographie &rarr;</h3>
-							<p>Tout savoir sur mon savoir et mes savoir-faire</p>
-						</a>
-					</Link>
+					
+						<div className="card">
+							<h3>Contact</h3>
+							<p>✆ 06 60 84 92 83</p>
+              <p>✉ frederic.tabbal@gmail.com</p>
+						</div>
+					
 
-					<Link href="/projects/productions">
-						<a className="card">
-							<h3>Réalisatons CMS &rarr;</h3>
-							<p>Sites internet réalisés pour l'agence RampUP</p>
-						</a>
-					</Link>
+					
+						<div className="card">
+							<h3>Diplôme</h3>
+							<p>Titre professionnel</p>
+              <p> de développeur web</p>
+						</div>
+					
 
-					<Link href="/projects/projets">
-						<a className="card">
-							<h3>Projets &rarr;</h3>
-							<p>Applications réalisées en React, React-Native</p>
-						</a>
-					</Link>
+				
+						<div className="card">
+							<h3>Compétences</h3>
+							<p>Ecoute</p>
+              <p>Adaptabilité</p>
+              <p>Gestion</p>
+              <p>Entrepreneuriat</p>
+						</div>
+				
 
-					<a href="https://github.com/Freddecarcans" className="card"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<h3>Github &rarr;</h3>
-						<p>
-							Consulter mes repositories sur Github
-            </p>
-					</a>
+					<div className="card">
+						<h3>Passions</h3>
+						<p>Pêche</p>
+            <p>Musique</p>
+            <p>Moto</p>
+            <p>Cinéma</p>
+					</div>
 
 				</div>
-			<h2>
-				<Link href="/">
-					<a>Retour à l'accueil</a>
+			
+				<Link href="/" >
+        <h2 className="back">⇦ Retour ⇦</h2>
 				</Link>
-			</h2>
+			
 			</main>
 			<Footer />
 			<style jsx>{`
@@ -59,6 +63,7 @@ export default function Bsn() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background: #b1a2a0;
 				}
 				main {
           padding: 5rem 0;
@@ -105,14 +110,23 @@ export default function Bsn() {
         }
 
         .card h3 {
-          margin: 0 0 1rem 0;
+          text-align: center;
           font-size: 1.5rem;
         }
 
         .card p {
-          margin: 0;
+          text-align: center;
           font-size: 1.25rem;
           line-height: 1.5;
+        }
+
+        .back  {
+          text-decoration: none;
+          color: #000000;
+        }
+        .back:hover {
+          text-decoration: underline;
+          color: #1c291f;
         }
 
 				`}</style>
