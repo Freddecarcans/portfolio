@@ -172,8 +172,8 @@ export default function Home() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #602292;
-          border-color: #602292;
+          color: #1c291f;
+          border-color: #1c291f;
         }
 
         .card h3 {
@@ -193,7 +193,7 @@ export default function Home() {
 				
 				.footlink:hover {
 					text-decoration: underline;
-					color:#602292;
+					color:#1c291f;
 
 				}
 
