@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Footer from '../components/footer'
 
-export default function Bsn() {
+export default function Biography() {
 	return (
 		<div className="container">
 			<Head>
