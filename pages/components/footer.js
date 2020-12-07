@@ -31,7 +31,7 @@ export default function Footer() {
                 }
                 .bottom a:hover {
                     text-decoration: underline;
-                    color: #602292;
+                    color: #1c291f;
                 }
                 .logo {
                     height: 1em;
