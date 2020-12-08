@@ -4,59 +4,55 @@ import Footer from '../components/footer'
 
 
 export default function Biography() {
-	return (
-		<div className="container">
-			<Head>
-				<title>Biographie</title>
-				<link rel="icon" href="/favicon-Agence-Rampup.ico" />
-			</Head>
+  return (
+    <div className="container">
+      <Head>
+        <title>Biographie</title>
+        <link rel="icon" href="/favicon-Agence-Rampup.ico" />
+      </Head>
 
-			<main>
-			<h1 className="title">Ma Bio</h1>
-      <div className="grid">
-					
-						<div className="card">
-							<h3>Contact</h3>
-							<p>✆ 06 60 84 92 83</p>
-              <p>✉ frederic.tabbal@gmail.com</p>
-						</div>
-					
+      <main>
+        <h1 className="title">Ma Bio</h1>
+        <div className="grid">
 
-					
-						<div className="card">
-							<h3>Diplôme</h3>
-							<p>Titre professionnel</p>
-              <p> de développeur web</p>
-						</div>
-					
+          <div className="card">
+            <h3>Contact</h3>
+            <p>✆ 06 60 84 92 83</p>
+            <p>✉ frederic.tabbal@gmail.com</p>
+          </div>
 
-				
-						<div className="card">
-							<h3>Compétences</h3>
-							<p>Ecoute</p>
-              <p>Adaptabilité</p>
-              <p>Gestion</p>
-              <p>Entrepreneuriat</p>
-						</div>
-				
 
-					<div className="card">
-						<h3>Passions</h3>
-						<p>Pêche</p>
-            <p>Musique</p>
-            <p>Moto</p>
-            <p>Cinéma</p>
-					</div>
-				</div>
-        
-				<Link href="/" >
-        <h2 className="back">⇦ Retour ⇦</h2>
-				</Link>
-			
-			</main>
-			<Footer />
-      
-			<style jsx>{`
+
+          <div className="card">
+            <h3>Diplôme</h3>
+            <p>Titre professionnel de</p>
+            <p> développeur web 2019</p>
+          </div>
+
+
+
+          <div className="card">
+            <h3>Compétences</h3>
+            <p className="parag">Ecoute &nbsp; &nbsp; &nbsp;   Adaptabilité</p>
+            <p className="parag"> Gestion  &nbsp; &nbsp; &nbsp;  Entrepreneuriat</p>
+          </div>  
+
+
+          <div className="card">
+            <h3>Passions</h3>
+            <p>Pêche &nbsp; &nbsp; &nbsp; Musique</p>
+            <p> Moto &nbsp; &nbsp; &nbsp; Cinéma</p>
+          </div>
+        </div>
+
+        <Link href="/" >
+          <h2 className="back">⇦ Retour ⇦</h2>
+        </Link>
+
+      </main>
+      <Footer />
+
+      <style jsx>{`
 				.container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -64,7 +60,7 @@ export default function Biography() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background: #b1a2a0;
+          background: #dacfcd;
 				}
 				main {
           padding: 5rem 0;
@@ -95,7 +91,7 @@ export default function Biography() {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
+          text-align: center;
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
@@ -103,12 +99,12 @@ export default function Biography() {
           transition: color 0.25s ease, border-color 0.25s ease;
         }
 
-        .card:hover,
+        /*.card:hover,
         .card:focus,
         .card:active {
           color: #1c291f;
-          border-color: #1c291f;
-        }
+          border-color: #3b4b3f;
+        }*/
 
         .card h3 {
           text-align: center;
@@ -116,7 +112,7 @@ export default function Biography() {
         }
 
         .card p {
-          text-align: center;
+          -stext-align: center;
           font-size: 1.25rem;
           line-height: 1.5;
         }
@@ -127,11 +123,22 @@ export default function Biography() {
         }
         .back:hover {
           text-decoration: underline;
-          color: #1c291f;
+          color: #3b4b3f;
         }
 
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
+
+          .card {
+            width: 90%;
+          }
+        } 
 				`}</style>
-			<style jsx global>{`
+
+      <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -145,7 +152,7 @@ export default function Biography() {
           box-sizing: border-box;
         }
       `}</style>
-		</div>
+    </div>
 
-	)
+  )
 }

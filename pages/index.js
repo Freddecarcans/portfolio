@@ -68,7 +68,7 @@ export default function Home() {
 
 			<style jsx>{`
         .container {
-					background-color: #b1a2a0;
+					background-color: #dacfcd;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
@@ -161,7 +161,7 @@ export default function Home() {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
+          text-align: center;
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
@@ -173,7 +173,7 @@ export default function Home() {
         .card:focus,
         .card:active {
           color: #1c291f;
-          border-color: #1c291f;
+          border-color: #3b4b3f;
         }
 
         .card h3 {
@@ -193,7 +193,7 @@ export default function Home() {
 				
 				.footlink:hover {
 					text-decoration: underline;
-					color:#1c291f;
+					color:#3b4b3f;
 
 				}
 
@@ -202,6 +202,7 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
+          
         }
 
         

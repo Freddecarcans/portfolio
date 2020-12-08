@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Footer from '../components/footer'
-import Card from '../components/productionsCard'
+import Head from 'next/head';
+import Link from 'next/link';
+import Footer from '../components/footer';
 
 
 export default function Productions() {
@@ -14,43 +13,60 @@ export default function Productions() {
       <main>
         <h1 className="title">Réalisations CMS</h1>
         <div className="grid">
-          <a className="card">
+          <a href="https://elp-liberonsvotrepuissance.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card">
             <h3>Elp Libérons votre puissance</h3>
-            <img src="/elp.png" alt="site elp" />
-            <p>Voir le site &rarr;</p>
+            <img src="/site-elp.png" alt="site elp" />
           </a>
-          <a className="card">
+          <a
+            href="https://bsnconseil.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card">
             <h3>BSN Conseil</h3>
-            <img src="/bsnconseil.png" alt="site BSN Conseil" />
-            <p>Voir le site &rarr;</p>
+            <img src="/site-bsn.png" alt="site BSN Conseil" />
           </a>
-          <a className="card">
+          <a
+            href="https://rampup.fr/template/fromager"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card">
             <h3>Fromager</h3>
             <img src="/site-fromager.png" alt="site fromager" />
-            <p>Voir le site &rarr;</p>
           </a>
-          <a className="card">
+          <a
+            href="https://rampup.fr/template/restau"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card">
             <h3>Restaurant</h3>
             <img src="/site-restaurant.png" alt="site restaurant" />
-            <p>Voir le site &rarr;</p>
           </a>
-          <a className="card">
+          <a
+            href="https://rampup.fr/template/charpentier"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card">
             <h3>Charpentier</h3>
             <img src="/site-charpentier.png" alt="site charpentier" />
-            <p>Voir le site &rarr;</p>
           </a>
-          <a className="card">
+          <a
+            href="https://rampup.fr/template/plombier"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card">
             <h3>Plombier</h3>
             <img src="/site-plombier.png" alt="site plombier" />
-            <p>Voir le site &rarr;</p>
           </a>
         </div>
 
-        <h2>
-          <Link href="/">
-            <a>Retour à l'accueil</a>
-          </Link>
-        </h2>
+
+        <Link href="/" >
+          <h2 className="back">⇦ Retour ⇦</h2>
+        </Link>
+
       </main>
       <Footer />
       <style jsx>{`
@@ -61,7 +77,9 @@ export default function Productions() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-				}
+          background: #dacfcd;
+        }
+        
 				main {
           padding: 5rem 0;
           flex: 1;
@@ -69,7 +87,8 @@ export default function Productions() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-				}
+        }
+        
 				.title {
           margin: 0;
           line-height: 1.15;
@@ -98,8 +117,25 @@ export default function Productions() {
           transition: color 0.25s ease, border-color 0.25s ease;
         }
 
+        .card:hover,
+        .card:focus,
+        .card:active {
+          color: #1c291f;
+          border-color: #3b4b3f;
+        }
+
         .card img {
           max-width: 300px;
+        }
+        
+        .back  {
+          text-decoration: none;
+          color: #000000;
+        }
+
+        .back:hover {
+          text-decoration: underline;
+          color: #3b4b3f;
         }
 
         @media (max-width: 600px) {
@@ -107,13 +143,13 @@ export default function Productions() {
             width: 100%;
             flex-direction: column;
           }
+          
           .title {
           margin: auto;
           line-height: 1.1;
           font-size: 3rem;
-        }
-        }
-        
+          }
+        }        
 			`}</style>
 
       <style jsx global>{`
