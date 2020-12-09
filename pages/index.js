@@ -15,6 +15,7 @@ export default function Home() {
 					Frédéric TABBAL {/*<Link href="/projects/bsn"><a>cette page!</a></Link>*/}
 				</h1>
 				<img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" className="portrait" />
+        <p>"Le savoir que l'on ne complète pas chaque jour diminue tous les jours."</p>
 				<p className="description">
 					Développeur Web {/*<code>pages/index.js</code>*/}
 				</p>

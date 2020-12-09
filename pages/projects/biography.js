@@ -96,15 +96,16 @@ export default function Biography() {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition: color 0.25s ease, border-color 0.25s ease;
+          transition: background-color 0.75s ease, border-color 0.25s ease;
         }
 
-        /*.card:hover,
+        .card:hover,
         .card:focus,
         .card:active {
-          color: #1c291f;
+          background-color: #ffffff;
           border-color: #3b4b3f;
-        }*/
+          transform: scale(1.1);
+        }
 
         .card h3 {
           text-align: center;
