@@ -23,21 +23,21 @@ export default function Home() {
 				<div className="grid">
 					<Link href="/projects/biography">
 						<a className="card">
-							<h3>Biographie &rarr;</h3>
+							<h2>Biographie &rarr;</h2>
 							<p>Tout savoir sur mon savoir et mes savoir-faire</p>
 						</a>
 					</Link>
 
 					<Link href="/projects/productions">
 						<a className="card">
-							<h3>Réalisatons CMS &rarr;</h3>
+							<h2>Réalisatons CMS &rarr;</h2>
 							<p>Sites internet réalisés pour l'agence RampUP</p>
 						</a>
 					</Link>
 
 					<Link href="/projects/projets">
 						<a className="card">
-							<h3>Projets &rarr;</h3>
+							<h2>Projets &rarr;</h2>
 							<p>Applications réalisées en React, React-Native</p>
 						</a>
 					</Link>
@@ -46,7 +46,7 @@ export default function Home() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<h3>Github &rarr;</h3>
+						<h2>Github &rarr;</h2>
 						<p>
 							Consulter mes repositories sur Github
             </p>
@@ -167,7 +167,7 @@ export default function Home() {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition: color 0.25s ease, border-color 0.25s ease;
+          transition: color 0.55s ease, border-color 0.25s ease;
         }
 
         .card:hover,
@@ -175,6 +175,7 @@ export default function Home() {
         .card:active {
           color: #1c291f;
           border-color: #3b4b3f;
+          background: #ffffff;
         }
 
         .card h3 {

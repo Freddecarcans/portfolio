@@ -13,10 +13,11 @@ export default function Biography() {
 
       <main>
         <h1 className="title">Ma Bio</h1>
+        <p>Reculez d'un pas et tout s'élargira spontanément.</p>
         <div className="grid">
 
           <div className="card">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <p>✆ 06 60 84 92 83</p>
             <p>✉ frederic.tabbal@gmail.com</p>
           </div>
@@ -24,7 +25,7 @@ export default function Biography() {
 
 
           <div className="card">
-            <h3>Diplôme</h3>
+            <h2>Diplôme</h2>
             <p>Titre professionnel de</p>
             <p> développeur web 2019</p>
           </div>
@@ -32,14 +33,14 @@ export default function Biography() {
 
 
           <div className="card">
-            <h3>Compétences</h3>
+            <h2>Compétences</h2>
             <p className="parag">Ecoute &nbsp; &nbsp; &nbsp;   Adaptabilité</p>
             <p className="parag"> Gestion  &nbsp; &nbsp; &nbsp;  Entrepreneuriat</p>
           </div>  
 
 
           <div className="card">
-            <h3>Passions</h3>
+            <h2>Passions</h2>
             <p>Pêche &nbsp; &nbsp; &nbsp; Musique</p>
             <p> Moto &nbsp; &nbsp; &nbsp; Cinéma</p>
           </div>

@@ -12,12 +12,13 @@ export default function Productions() {
       </Head>
       <main>
         <h1 className="title">Réalisations CMS</h1>
+        <p>Apprendre, c'est ramer à contre-courant, dès qu'on s'arrête, on recule.</p>
         <div className="grid">
           <a href="https://elp-liberonsvotrepuissance.fr"
             target="_blank"
             rel="noopener noreferrer"
             className="card">
-            <h3>Elp Libérons votre puissance</h3>
+            <h2>Elp</h2>
             <img src="/site-elp.png" alt="site elp" />
           </a>
           <a
@@ -25,7 +26,7 @@ export default function Productions() {
             target="_blank"
             rel="noopener noreferrer"
             className="card">
-            <h3>BSN Conseil</h3>
+            <h2>BSN Conseil</h2>
             <img src="/site-bsn.png" alt="site BSN Conseil" />
           </a>
           <a
@@ -33,7 +34,7 @@ export default function Productions() {
             target="_blank"
             rel="noopener noreferrer"
             className="card">
-            <h3>Fromager</h3>
+            <h2>Fromager</h2>
             <img src="/site-fromager.png" alt="site fromager" />
           </a>
           <a
@@ -41,7 +42,7 @@ export default function Productions() {
             target="_blank"
             rel="noopener noreferrer"
             className="card">
-            <h3>Restaurant</h3>
+            <h2>Restaurant</h2>
             <img src="/site-restaurant.png" alt="site restaurant" />
           </a>
           <a
@@ -49,7 +50,7 @@ export default function Productions() {
             target="_blank"
             rel="noopener noreferrer"
             className="card">
-            <h3>Charpentier</h3>
+            <h2>Charpentier</h2>
             <img src="/site-charpentier.png" alt="site charpentier" />
           </a>
           <a
@@ -57,7 +58,7 @@ export default function Productions() {
             target="_blank"
             rel="noopener noreferrer"
             className="card">
-            <h3>Plombier</h3>
+            <h2>Plombier</h2>
             <img src="/site-plombier.png" alt="site plombier" />
           </a>
         </div>
