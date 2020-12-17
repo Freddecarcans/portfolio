@@ -35,7 +35,7 @@ export default function Home() {
 						</a>
 					</Link>
 
-					<Link href="/projects/projets">
+					<Link href="/projects/personnalprojects">
 						<a className="card">
 							<h2>Projets &rarr;</h2>
 							<p>Applications réalisées en React, React-Native</p>

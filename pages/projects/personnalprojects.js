@@ -1,34 +1,29 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Footer from '../components/footer';
+import Link from 'next/link'
+import Head from 'next/head'
+import Footer from '../components/footer'
 
-
-export default function Productions() {
+export default function PersonnalProjects() {
   return (
     <div className="container">
       <Head>
-        <title>Réalisations CMS</title>
+        <title>Projets</title>
         <link rel="icon" href="/favicon-Agence-Rampup.ico" />
       </Head>
       <main>
-        <h1 className="title">Réalisations CMS</h1>
-        <p>Apprendre, c'est ramer à contre-courant, dès qu'on s'arrête, on recule.</p>
+        <h1 className="title">Projets personnels</h1>
+
         <div className="grid">
-          <a href="https://elp-liberonsvotrepuissance.fr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card">
-            <h2>Elp</h2>
-            <img src="/site-elp.png" alt="site elp" />
-          </a>
-          <a
-            href="https://bemysound.info"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card">
-            <h2>Blog BeMysound</h2>
-            <img src="/blog-bemysound.png" alt="blog BeMysound" />
-          </a>
+          <div className="card">
+            <img src="/mfp.png" alt="site elp" />
+          </div>
+          <div className="card">
+            <h2>My Funeral Playlist</h2>
+            <p>Application mobile écrite en React-Native</p>
+            <Link href="/projects/screens" >
+              <p className="back">Voir les captures d'écran ➔</p>
+              </Link>
+
+          </div>
           <a
             href="https://rampup.fr/template/fromager"
             target="_blank"
@@ -45,31 +40,13 @@ export default function Productions() {
             <h2>BSN Conseil</h2>
             <img src="/site-bsn.png" alt="site BSN Conseil" />
           </a>
-          
-          <a
-            href="https://rampup.fr/template/restau"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card">
-            <h2>Restaurant</h2>
-            <img src="/site-restaurant.png" alt="site restaurant" />
-          </a>
-          
-          <a
-            href="https://rampup.fr/template/plombier"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card">
-            <h2>Plombier</h2>
-            <img src="/site-plombier.png" alt="site plombier" />
-          </a>
-        </div>
 
+
+        </div>
 
         <Link href="/" >
           <h2 className="back">⇦ Retour ⇦</h2>
         </Link>
-
       </main>
       <Footer />
       <style jsx>{`
@@ -115,23 +92,22 @@ export default function Productions() {
           text-align: center;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
+          /*border: 1px solid #eaeaea;
+          border-radius: 10px;*/
           transition: color 0.25s ease, border-color 0.25s ease;
         }
 
-        .card:hover,
+        /*.card:hover,
         .card:focus,
         .card:active {
           color: #1c291f;
           border-color: #3b4b3f;
-          background: #ffffff;
-        }
+        }*/
 
         .card img {
           max-width: 300px;
         }
-        
+
         .back  {
           text-decoration: none;
           color: #000000;
@@ -140,22 +116,10 @@ export default function Productions() {
         .back:hover {
           text-decoration: underline;
           color: #3b4b3f;
+          transform: scale(1.1);
         }
 
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-          
-          .title {
-          margin: auto;
-          line-height: 1.1;
-          font-size: 3rem;
-          }
-        }        
-			`}</style>
-
+				`}</style>
       <style jsx global>{`
         html,
         body {
@@ -171,9 +135,6 @@ export default function Productions() {
         }
       `}</style>
     </div>
-
-
-
 
   )
 }
