@@ -9,6 +9,9 @@ export default function Productions() {
       <Head>
         <title>Réalisations CMS</title>
         <link rel="icon" href="/favicon-Agence-Rampup.ico" />
+        <meta
+          name="description"
+          content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
       <main>
         <h1 className="title">Réalisations CMS</h1>
