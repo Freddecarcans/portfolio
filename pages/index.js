@@ -3,71 +3,74 @@ import Link from 'next/link'
 
 
 export default function Home() {
-	return (
-		<div className="container">
-			<Head>
-				<title>Fred TABBAL</title>
-				<link rel="icon" href="/favicon-Agence-Rampup.ico" />
-			</Head>
+  return (
+    <div className="container">
+      <Head>
+        <title>Fred TABBAL</title>
+        <link rel="icon" href="/favicon-Agence-Rampup.ico" />
+        <meta
+          name="description"
+          content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
+      </Head>
 
-			<main>
-				<h1 className="title">
-					Frédéric TABBAL {/*<Link href="/projects/bsn"><a>cette page!</a></Link>*/}
+      <main>
+        <h1 className="title">
+          Frédéric TABBAL
 				</h1>
-				<img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" className="portrait" />
-        <p>"Le savoir que l'on ne complète pas chaque jour diminue tous les jours."</p>
-				<p className="description">
-					Développeur Web {/*<code>pages/index.js</code>*/}
+        <img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" className="portrait" />
+        <p className="proverbe">"Le savoir que l'on ne complète pas chaque jour diminue tous les jours."</p>
+        <p className="description">
+          Développeur Web
 				</p>
 
-				<div className="grid">
-					<Link href="/projects/biography">
-						<a className="card">
-							<h2>Biographie &rarr;</h2>
-							<p>Tout savoir sur mon savoir et mes savoir-faire</p>
-						</a>
-					</Link>
+        <div className="grid">
+          <Link href="/projects/biography">
+            <a className="card">
+              <h2>Biographie &rarr;</h2>
+              <p>Tout savoir sur mon savoir et mes savoir-faire</p>
+            </a>
+          </Link>
 
-					<Link href="/projects/productions">
-						<a className="card">
-							<h2>Réalisatons CMS &rarr;</h2>
-							<p>Sites internet réalisés pour l'agence RampUP</p>
-						</a>
-					</Link>
+          <Link href="/projects/productions">
+            <a className="card">
+              <h2>Réalisatons CMS &rarr;</h2>
+              <p>Sites internet réalisés pour l'agence RampUP</p>
+            </a>
+          </Link>
 
-					<Link href="/projects/personnalprojects">
-						<a className="card">
-							<h2>Projets &rarr;</h2>
-							<p>Applications réalisées en React, React-Native</p>
-						</a>
-					</Link>
+          <Link href="/projects/personnalprojects">
+            <a className="card">
+              <h2>Projets &rarr;</h2>
+              <p>Applications réalisées en React, React-Native</p>
+            </a>
+          </Link>
 
-					<a href="https://github.com/Freddecarcans" className="card"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<h2>Github &rarr;</h2>
-						<p>
-							Consulter mes repositories sur Github
+          <a href="https://github.com/Freddecarcans" className="card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>Github &rarr;</h2>
+            <p>
+              Consulter mes repositories sur Github
             </p>
-					</a>
+          </a>
 
-				</div>
+        </div>
 
-			</main>
+      </main>
 
-			<footer>
-				<a className="footlink"
-					href="https://rampup.fr"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Made with ❤️ by Me at RampUP{' '}
-					<img src="/favicon-Agence-Rampup.ico" alt="Rampup Logo" className="logo" />
-				</a>
-			</footer>
+      <footer>
+        <a className="footlink"
+          href="https://rampup.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Made with ❤️ by Me at RampUP{' '}
+          <img src="/favicon-Agence-Rampup.ico" alt="Rampup Logo" className="logo" />
+        </a>
+      </footer>
 
-			<style jsx>{`
+      <style jsx>{`
         .container {
 					background-color: #dacfcd;
           min-height: 100vh;
@@ -130,7 +133,8 @@ export default function Home() {
         }
 
         .title,
-        .description {
+        .description,
+        .proverbe {
           text-align: center;
         }
 
@@ -210,7 +214,7 @@ export default function Home() {
         
       `}</style>
 
-			<style jsx global>{`
+      <style jsx global>{`
         html,
         body {
 					
@@ -226,6 +230,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-		</div>
-	)
+    </div>
+  )
 }

@@ -9,11 +9,14 @@ export default function Biography() {
       <Head>
         <title>Biographie</title>
         <link rel="icon" href="/favicon-Agence-Rampup.ico" />
+        <meta
+          name="description"
+          content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
 
       <main>
         <h1 className="title">Ma Bio</h1>
-        <p>Reculez d'un pas et tout s'élargira spontanément.</p>
+        <p className="proverbe">Reculez d'un pas et tout s'élargira spontanément.</p>
         <div className="grid">
 
           <div className="card">
@@ -76,6 +79,10 @@ export default function Biography() {
           line-height: 1.15;
 					font-size: 4rem;
 					text-align: center;
+        }
+
+        .proverbe {
+          text-align: center;
         }
 
         .grid {

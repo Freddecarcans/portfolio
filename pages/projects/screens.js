@@ -8,6 +8,9 @@ export default function Screens() {
       <Head>
         <title>My Funeral Playlist</title>
         <link rel="icon" href="/favicon-Agence-Rampup.ico" />
+        <meta
+          name="description"
+          content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
       <main>
         <h1 className="title">My Funeral Playlist</h1>

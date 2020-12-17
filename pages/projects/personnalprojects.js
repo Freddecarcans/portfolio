@@ -8,6 +8,9 @@ export default function PersonnalProjects() {
       <Head>
         <title>Projets</title>
         <link rel="icon" href="/favicon-Agence-Rampup.ico" />
+        <meta
+          name="description"
+          content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
       <main>
         <h1 className="title">Projets personnels</h1>
@@ -71,7 +74,7 @@ export default function PersonnalProjects() {
         .card {
           margin: 1rem;
           flex-basis: 45%;
-          padding: 1.5rem;
+          padding: 1rem;
           text-align: center;
           color: inherit;
           text-decoration: none;
