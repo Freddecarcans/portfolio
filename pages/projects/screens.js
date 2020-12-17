@@ -1,58 +1,59 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import Footer from '../components/footer'
+import Link from 'next/link'
 
-
-export default function Biography() {
+export default function Screens() {
   return (
     <div className="container">
       <Head>
-        <title>Biographie</title>
+        <title>My Funeral Playlist</title>
         <link rel="icon" href="/favicon-Agence-Rampup.ico" />
       </Head>
-
       <main>
-        <h1 className="title">Ma Bio</h1>
-        <p>Reculez d'un pas et tout s'élargira spontanément.</p>
+        <h1 className="title">My Funeral Playlist</h1>
         <div className="grid">
-
           <div className="card">
-            <h2>Contact</h2>
-            <p>✆ 06 60 84 92 83</p>
-            <p>✉ frederic.tabbal@gmail.com</p>
+            <h2>Ecran 1</h2>
+            <img src="/ecran1.png" alt="écran 1" className="zoom" />
+          </div>
+          <div className="card">
+            <h2>Ecran 2</h2>
+            <img src="/ecran2.png" alt="écran 2" className="zoom" />
+          </div>
+          <div className="card">
+            <h2>Ecran 3</h2>
+            <img src="/ecran3.png" alt="écran 3" className="zoom" />
+          </div>
+          <div className="card">
+            <h2>Ecran 4</h2>
+            <img src="/ecran4.png" alt="écran 4" className="zoom" />
           </div>
 
-
-
           <div className="card">
-            <h2>Diplôme</h2>
-            <p>Titre professionnel de</p>
-            <p> développeur web 2019</p>
+            <h2>Ecran 5</h2>
+            <img src="/ecran5.png" alt="écran 5" className="zoom" />
           </div>
 
-
+          <div className="card">
+            <h2>Ecran 6</h2>
+            <img src="/ecran6.png" alt="sécran 6" className="zoom" />
+          </div>
 
           <div className="card">
-            <h2>Compétences</h2>
-            <p className="parag">Ecoute &nbsp; &nbsp; &nbsp;   Adaptabilité</p>
-            <p className="parag"> Gestion  &nbsp; &nbsp; &nbsp;  Entrepreneuriat</p>
-          </div>  
-
+            <h2>Ecran 7</h2>
+            <img src="/ecran7.png" alt="écran 7" className="zoom" />
+          </div>
 
           <div className="card">
-            <h2>Passions</h2>
-            <p>Pêche &nbsp; &nbsp; &nbsp; Musique</p>
-            <p> Moto &nbsp; &nbsp; &nbsp; Cinéma</p>
+            <h2>Ecran 8</h2>
+            <img src="/ecran8.png" alt="écran 8" className="zoom" />
           </div>
         </div>
-
         <Link href="/" >
           <h2 className="back">⇦ Retour ⇦</h2>
         </Link>
-
       </main>
       <Footer />
-
       <style jsx>{`
 				.container {
           min-height: 100vh;
@@ -62,7 +63,8 @@ export default function Biography() {
           justify-content: center;
           align-items: center;
           background: #dacfcd;
-				}
+        }
+        
 				main {
           padding: 5rem 0;
           flex: 1;
@@ -70,7 +72,8 @@ export default function Biography() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-				}
+        }
+        
 				.title {
           margin: 0;
           line-height: 1.15;
@@ -83,7 +86,6 @@ export default function Biography() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
@@ -95,51 +97,37 @@ export default function Biography() {
           text-align: center;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: background-color 0.75s ease, border-color 0.25s ease;
+          /*border: 1px solid #eaeaea;
+          border-radius: 10px;*/
+          transition: color 0.25s ease, border-color 0.25s ease;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          background-color: #ffffff;
-          border-color: #3b4b3f;
-          transform: scale(1.1);
+          /*color: #1c291f;
+          border-color: #3b4b3f;*/
+          
         }
 
-        .card h3 {
-          text-align: center;
-          font-size: 1.5rem;
+        .zoom:hover {
+          transform: scale(3);
         }
 
-        .card p {
-          -stext-align: center;
-          font-size: 1.25rem;
-          line-height: 1.5;
+        .card img {
+          max-width: 300px;
         }
 
         .back  {
           text-decoration: none;
           color: #000000;
         }
+
         .back:hover {
           text-decoration: underline;
           color: #3b4b3f;
         }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-
-          .card {
-            width: 90%;
-          }
-        } 
 				`}</style>
-
       <style jsx global>{`
         html,
         body {
@@ -155,6 +143,5 @@ export default function Biography() {
         }
       `}</style>
     </div>
-
   )
 }
