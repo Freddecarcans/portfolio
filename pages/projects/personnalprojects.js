@@ -24,24 +24,7 @@ export default function PersonnalProjects() {
               </Link>
 
           </div>
-          <a
-            href="https://rampup.fr/template/fromager"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card">
-            <h2>Fromager</h2>
-            <img src="/site-fromager.png" alt="site fromager" />
-          </a>
-          <a
-            href="https://bsnconseil.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card">
-            <h2>BSN Conseil</h2>
-            <img src="/site-bsn.png" alt="site BSN Conseil" />
-          </a>
-
-
+          
         </div>
 
         <Link href="/" >
