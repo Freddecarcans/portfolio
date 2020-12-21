@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import NavBar from './components/navbar'
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
           name="description"
           content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
-
+      <NavBar />
       <main>
         <h1 className="title">
           Frédéric TABBAL
@@ -33,7 +34,7 @@ export default function Home() {
 
           <Link href="/projects/productions">
             <a className="card">
-              <h2>Réalisatons CMS &rarr;</h2>
+              <h2>Réalisations CMS &rarr;</h2>
               <p>Sites internet réalisés pour l'agence RampUP</p>
             </a>
           </Link>
@@ -78,7 +79,7 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: left;
         }
 
         main {
@@ -208,7 +209,7 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
-          
+
         }
 
         
@@ -217,12 +218,12 @@ export default function Home() {
       <style jsx global>{`
         html,
         body {
-					
+          
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-						sans-serif;
+            sans-serif;
 						
         }
 

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Footer from '../components/footer'
+import NavBar from '../components/navbar'
 
 
 export default function Biography() {
@@ -13,10 +14,9 @@ export default function Biography() {
           name="description"
           content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
-
+      <NavBar />
       <main>
         <h1 className="title">Ma Bio</h1>
-        <p className="proverbe">Reculez d'un pas et tout s'élargira spontanément.</p>
         <div className="grid">
 
           <div className="card">
@@ -48,11 +48,6 @@ export default function Biography() {
             <p> Moto &nbsp; &nbsp; &nbsp; Cinéma</p>
           </div>
         </div>
-
-        <Link href="/" >
-          <h2 className="back">⇦ Retour ⇦</h2>
-        </Link>
-
       </main>
       <Footer />
 
@@ -63,7 +58,7 @@ export default function Biography() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: left;
           background: #dacfcd;
 				}
 				main {
@@ -79,10 +74,6 @@ export default function Biography() {
           line-height: 1.15;
 					font-size: 4rem;
 					text-align: center;
-        }
-
-        .proverbe {
-          text-align: center;
         }
 
         .grid {
@@ -126,15 +117,6 @@ export default function Biography() {
           line-height: 1.5;
         }
 
-        .back  {
-          text-decoration: none;
-          color: #000000;
-        }
-        .back:hover {
-          text-decoration: underline;
-          color: #3b4b3f;
-        }
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
@@ -145,7 +127,7 @@ export default function Biography() {
             width: 90%;
           }
         } 
-				`}</style>
+			`}</style>
 
       <style jsx global>{`
         html,
