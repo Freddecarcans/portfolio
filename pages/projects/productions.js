@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/footer';
+import NavBar from '../components/navbar'
 
 
 export default function Productions() {
@@ -13,6 +14,7 @@ export default function Productions() {
           name="description"
           content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
+      <NavBar />
       <main>
         <h1 className="title">Réalisations CMS</h1>
         <p>Apprendre, c'est ramer à contre-courant, dès qu'on s'arrête, on recule.</p>
@@ -67,12 +69,6 @@ export default function Productions() {
             <img src="/site-plombier.png" alt="site plombier" />
           </a>
         </div>
-
-
-        <Link href="/" >
-          <h2 className="back">⇦ Retour ⇦</h2>
-        </Link>
-
       </main>
       <Footer />
       <style jsx>{`
@@ -82,7 +78,7 @@ export default function Productions() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: left;
           background: #dacfcd;
         }
         
@@ -133,16 +129,6 @@ export default function Productions() {
 
         .card img {
           max-width: 300px;
-        }
-        
-        .back  {
-          text-decoration: none;
-          color: #000000;
-        }
-
-        .back:hover {
-          text-decoration: underline;
-          color: #3b4b3f;
         }
 
         @media (max-width: 600px) {

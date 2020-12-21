@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Footer from '../components/footer'
 import Link from 'next/link'
+import NavBar from '../components/navbar'
 
 export default function Screens() {
   return (
@@ -12,7 +13,9 @@ export default function Screens() {
           name="description"
           content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
+      <NavBar />
       <main>
+
         <h1 className="title">My Funeral Playlist</h1>
         <div className="grid">
           <div className="card">
@@ -52,9 +55,6 @@ export default function Screens() {
             <img src="/ecran8.png" alt="écran 8" className="zoom" />
           </div>
         </div>
-        <Link href="/" >
-          <h2 className="back">⇦ Retour ⇦</h2>
-        </Link>
       </main>
       <Footer />
       <style jsx>{`
@@ -64,7 +64,7 @@ export default function Screens() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: left;
           background: #dacfcd;
         }
         
@@ -120,17 +120,8 @@ export default function Screens() {
         .card img {
           max-width: 300px;
         }
+			`}</style>
 
-        .back  {
-          text-decoration: none;
-          color: #000000;
-        }
-
-        .back:hover {
-          text-decoration: underline;
-          color: #3b4b3f;
-        }
-				`}</style>
       <style jsx global>{`
         html,
         body {

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Footer from '../components/footer'
+import NavBar from '../components/navbar'
 
 export default function PersonnalProjects() {
   return (
@@ -12,6 +13,7 @@ export default function PersonnalProjects() {
           name="description"
           content="Frederic TABBAL. Développeur web. Bordeaux. France. Javascript, React, React-native" />
       </Head>
+      <NavBar />
       <main>
         <h1 className="title">Projets personnels</h1>
 
@@ -29,12 +31,9 @@ export default function PersonnalProjects() {
           </div>
           
         </div>
-
-        <Link href="/" >
-          <h2 className="back">⇦ Retour ⇦</h2>
-        </Link>
       </main>
       <Footer />
+      
       <style jsx>{`
 				.container {
           min-height: 100vh;
@@ -42,7 +41,7 @@ export default function PersonnalProjects() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: left;
           background: #dacfcd;
         }
         
@@ -74,7 +73,7 @@ export default function PersonnalProjects() {
         .card {
           margin: 1rem;
           flex-basis: 45%;
-          padding: 1rem;
+          padding: 1.5rem;
           text-align: center;
           color: inherit;
           text-decoration: none;
@@ -105,7 +104,8 @@ export default function PersonnalProjects() {
           transform: scale(1.1);
         }
 
-				`}</style>
+			`}</style>
+
       <style jsx global>{`
         html,
         body {
