@@ -90,6 +90,10 @@ export default function Productions() {
           justify-content: center;
           align-items: center;
         }
+
+        main p {
+          text-align: center;
+        }
         
 				.title {
           margin: 0;
