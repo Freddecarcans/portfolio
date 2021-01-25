@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Footer from '../components/footer';
 import NavBar from '../components/navbar'
 
@@ -17,7 +16,7 @@ export default function Productions() {
       <NavBar />
       <main>
         <h1 className="title">Réalisations CMS</h1>
-        <p>Apprendre, c'est ramer à contre-courant, dès qu'on s'arrête, on recule.</p>
+        <p>Apprendre, c'est ramer à contre-courant, dès qu'on s'arrête, on recule.<br/>Proverbe chinois</p>
         <div className="grid">
           <a href="https://elp-liberonsvotrepuissance.fr"
             target="_blank"

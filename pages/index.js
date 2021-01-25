@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import NavBar from './components/navbar'
+import Footer from './components/footer'
 
 
 export default function Home() {
@@ -18,17 +19,17 @@ export default function Home() {
         <h1 className="title">
           Frédéric TABBAL
 				</h1>
-        <img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" className="portrait" />
-        <p className="proverbe">"Le savoir que l'on ne complète pas chaque jour diminue tous les jours."</p>
         <p className="description">
           Développeur Web
 				</p>
-
+        <img src="/Frederic-Tabbal.png" alt="Frédéric Tabbal" className="portrait" />
+        <p className="proverbe">"Le savoir que l'on ne complète pas chaque jour diminue tous les jours."<br/>Proverbe chinois</p>
+        
         <div className="grid">
           <Link href="/projects/biography">
             <a className="card">
               <h2>Biographie &rarr;</h2>
-              <p>Tout savoir sur mon savoir et mes savoir-faire</p>
+              <p>Tout savoir sur mon savoir et mes savoir-faire</p>  
             </a>
           </Link>
 
@@ -45,7 +46,6 @@ export default function Home() {
               <p>Applications réalisées en React, React-Native</p>
             </a>
           </Link>
-
           <a href="https://github.com/Freddecarcans" className="card"
             target="_blank"
             rel="noopener noreferrer"
@@ -55,21 +55,9 @@ export default function Home() {
               Consulter mes repositories sur Github
             </p>
           </a>
-
         </div>
-
       </main>
-
-      <footer>
-        <a className="footlink"
-          href="https://rampup.fr"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Made with ❤️ by Me at RampUP{' '}
-          <img src="/favicon-Agence-Rampup.ico" alt="Rampup Logo" className="logo" />
-        </a>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         .container {
@@ -88,25 +76,6 @@ export default function Home() {
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
           justify-content: center;
           align-items: center;
         }
@@ -158,7 +127,6 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
@@ -194,37 +162,22 @@ export default function Home() {
           line-height: 1.5;
         }
 
-        .logo {
-          height: 1em;
-				}
-				
-				.footlink:hover {
-					text-decoration: underline;
-					color:#3b4b3f;
-
-				}
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
             flex-direction: column;
           }
-
         }
-
-        
       `}</style>
 
       <style jsx global>{`
         html,
-        body {
-          
+        body {   
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-						
+            sans-serif;			
         }
 
         * {

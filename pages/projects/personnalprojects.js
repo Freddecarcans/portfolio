@@ -15,11 +15,11 @@ export default function PersonnalProjects() {
       </Head>
       <NavBar />
       <main>
-        <h1 className="title">Projets personnels</h1>
+        <h1 className="title">Projets</h1>
 
         <div className="grid">
           <div className="card">
-            <img src="/mfp.png" alt="site elp" />
+            <img src="/mfp.png" alt="appli My Funeral Playlist" />
           </div>
           <div className="card">
             <h2>My Funeral Playlist</h2>
@@ -27,7 +27,19 @@ export default function PersonnalProjects() {
             <Link href="/projects/screens" >
               <p className="back">Voir les captures d'écran ➔</p>
               </Link>
-
+          </div>
+          <div className="card">
+            <img src="/c2g.png" alt="appli Clean2Gether" />
+          </div>
+          <div className="card">
+            <h2>Clean2Gether</h2>
+            <p>Application mobile écrite en React-Native</p>
+            <a href="https://www.clean2gether.com/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <p className="back">Voir le site ➔</p>
+              </a>
           </div>
           
         </div>
@@ -81,13 +93,6 @@ export default function PersonnalProjects() {
           border-radius: 10px;*/
           transition: color 0.25s ease, border-color 0.25s ease;
         }
-
-        /*.card:hover,
-        .card:focus,
-        .card:active {
-          color: #1c291f;
-          border-color: #3b4b3f;
-        }*/
 
         .card img {
           max-width: 300px;
