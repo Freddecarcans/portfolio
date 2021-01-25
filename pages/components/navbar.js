@@ -1,40 +1,37 @@
 import Link from 'next/link'
 
 export default function NavBar() {
-    return (
-        <>
-            <nav role="navigation">
-                <div id="menuToggle">
-                    {/**
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    */}
-                    <input type="checkbox" />
+  return (
+    <>
+      <nav role="navigation">
+        <div id="menuToggle">
 
-                    {/**
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-     */}
-                    <span></span>
-                    <span></span>
-                    <span></span>
+          {/** A fake / hidden checkbox is used as click reciever,
+     so you can use the :checked selector on it .*/}
 
-                    {/**
+          <input type="checkbox" />
+
+          {/** Some spans to act as a hamburger.
+     They are acting like a real hamburger,
+      not that McDonalds stuff. */}
+          <span></span>
+          <span></span>
+          <span></span>
+
+          {/**
     Too bad the menu has to be inside of the button
     but hey, it's pure CSS magic.
      */}
-                    <ul id="menu">
-                        <Link href='/'><li className="lien">Accueil</li></Link>
-                        <Link href="/projects/biography"><li className="lien">Biographie</li></Link>
-                        <Link href="/projects/productions"><li className="lien">Réalisations CMS</li></Link>
-                        <Link href="/projects/personnalprojects"><li className="lien">Projets personnels</li></Link>
-                    </ul>
-                </div>
-            </nav>
+          <ul id="menu">
+            <Link href='/'><li className="lien">Accueil</li></Link>
+            <Link href="/projects/biography"><li className="lien">Biographie</li></Link>
+            <Link href="/projects/productions"><li className="lien">Réalisations CMS</li></Link>
+            <Link href="/projects/personnalprojects"><li className="lien">Projets</li></Link>
+          </ul>
+        </div>
+      </nav>
 
-            <style jsx>{`
+      <style jsx>{`
 
               body {
                 margin: 0;
@@ -171,6 +168,6 @@ export default function NavBar() {
               }
 
             `}</style>
-        </>
-    )
+    </>
+  )
 }
