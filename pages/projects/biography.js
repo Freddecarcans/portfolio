@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Footer from '../components/footer'
 import NavBar from '../components/navbar'
+import Link from 'next/link'
 
 
 export default function Biography() {
@@ -25,12 +26,13 @@ export default function Biography() {
           </div>
 
 
-
-          <div className="card">
-            <h2>Diplôme</h2>
+        <Link href="/projects/diploma">
+          <a className="card">
+            <h2>Diplôme &rarr;</h2> 
             <p>Titre professionnel de</p>
             <p> développeur web 2019</p>
-          </div>
+          </a>
+          </Link>
 
 
 
@@ -103,6 +105,10 @@ export default function Biography() {
           background-color: #ffffff;
           border-color: #3b4b3f;
           transform: scale(1.1);
+        }
+        .diploma:hover {
+          background: url("../public/diplome.png);
+          
         }
 
         .card h3 {
