@@ -26,7 +26,7 @@ export default function NavBar() {
             <Link href='/'><li className="lien">Accueil</li></Link>
             <Link href="/projects/biography"><li className="lien">Biographie</li></Link>
             <Link href="/projects/productions"><li className="lien">Réalisations CMS</li></Link>
-            <Link href="/projects/personnalprojects"><li className="lien">Projets</li></Link>
+            <Link href="/projects/personnalprojects"><li className="lien">Projets React-Native</li></Link>
           </ul>
         </div>
       </nav>
@@ -151,7 +151,7 @@ export default function NavBar() {
               
               #menu li {
                 padding: 10px 0;
-                font-size: 22px;
+                font-size: 20px;
               }
               
               /*
